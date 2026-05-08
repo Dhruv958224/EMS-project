@@ -18,6 +18,7 @@ app.use(cors({
   origin: ['http://localhost:5173', 'http://localhost:5174'],
   credentials: true
 }));
+
 app.use("/api/auth", authRoutes);
 app.use("/api/department", departmentRoutes);
 app.use("/api/employee", employeeRoutes);
@@ -26,17 +27,8 @@ app.use("/api/setting", settingRoutes);
 app.use("/api/leave", leaveRoutes);
 app.use("/api/dashboard", dashboardRoutes);
 
-const PORT = process.env.PORT || 5000;
+connectToDatabase().catch(err => {
+  console.error("❌ Failed to connect DB:", err.message);
+});
 
-const startServer = async () => {
-  try {
-    await connectToDatabase();
-    app.listen(PORT, () => {
-      console.log(`✅ Server running on port: ${PORT}`);
-    });
-  } catch (error) {
-    console.error("❌ Failed to start server:", error.message);
-  }
-};
-
-startServer();
+export default app;
