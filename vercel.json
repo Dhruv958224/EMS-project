@@ -9,7 +9,6 @@
     "backend": {
       "entrypoint": "backend",
       "installCommand": "npm install",
-      "startCommand": "npm start",
       "routePrefix": "/api"
     }
   }
