@@ -18,7 +18,7 @@ const DepartmentList = () => {
   useEffect(() => {
     const fetchDepartments = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/department/with-employees', {
+        const response = await axios.get('https://ems-project-ah24.vercel.app/api/department/with-employees', {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`,
           },
