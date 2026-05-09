@@ -17,11 +17,10 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(cors({
-  origin: [
-    "http://localhost:5173",
-    "http://localhost:5174",
-    "https://ems-project-ah24.vercel.app"
-  ],
+  origin: 
+
+    "https://ems-project-ah24.vercel.app",
+  
   credentials: true
 }));
 
