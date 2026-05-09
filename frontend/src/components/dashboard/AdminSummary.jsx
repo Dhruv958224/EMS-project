@@ -19,7 +19,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchSummary = async () => {
       try {
-        const response = await axios.get("https://ems-project-ah24.vercel.app/api/dashboard/summary", {
+        const response = await axios.get("https://ems-backend-seven.vercel.app/api/dashboard/summary", {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },

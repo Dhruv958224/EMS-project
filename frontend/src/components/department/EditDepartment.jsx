@@ -16,7 +16,7 @@ const EditDepartment = () => {
   useEffect(() => {
     const fetchDepartment = async () => {
       try {
-        const response = await axios.get(`https://ems-project-ah24.vercel.app/api/department/${id}`, {
+        const response = await axios.get(`https://ems-backend-seven.vercel.app/api/department/${id}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },

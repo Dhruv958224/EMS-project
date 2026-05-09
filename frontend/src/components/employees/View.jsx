@@ -12,7 +12,7 @@ const View = () => {
   useEffect(() => {
     const fetchEmployee = async () => {
       try {
-        const response = await axios.get(`https://ems-project-ah24.vercel.app/api/employee/${id}`, {
+        const response = await axios.get(`https://ems-backend-seven.vercel.app/api/employee/${id}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },
