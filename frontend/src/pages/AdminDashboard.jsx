@@ -1,6 +1,6 @@
 import AdminSidebar from "../components/dashboard/AdminSidebar";
 import { useAuth } from "../context/authContext";
-import NavBar from "../components/dashboard/NavBar";
+import Navbar from "../components/dashboard/Navbar";
 import { Outlet } from "react-router-dom";
 
 const AdminDashboard = () => {
@@ -10,7 +10,7 @@ const AdminDashboard = () => {
     <div className="flex h-screen">
       <AdminSidebar />
       <div className="flex-1 bg-gray-100">
-        <NavBar />
+        <Navbar />  
         <Outlet />
       </div>
     </div>
