@@ -15,7 +15,7 @@ import EditEmployee from "./components/employees/Edit";
 import AddSalary from "./components/salary/Add";
 import ViewSalary from "./components/salary/View";
 import SummaryCard from "./components/EmployeeDashboard/SummaryCard";
-import Setting from "./components/common/setting";
+import Setting from "./components/common/Setting";
 import LeaveList from "./components/leave/List";
 import AddLeave from "./components/leave/Add";
 import Table from "./components/leave/Table";
