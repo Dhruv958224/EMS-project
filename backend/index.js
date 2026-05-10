@@ -19,7 +19,7 @@ app.use(express.json());
 app.use(cors({
   origin: 
 
-    "https://ems-project-ah24.vercel.app",
+    "https://ems-frontend-nu-coral.vercel.app",
   
   credentials: true
 }));

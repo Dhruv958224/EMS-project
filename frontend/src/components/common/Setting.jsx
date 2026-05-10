@@ -31,7 +31,7 @@ const Setting = () => {
 
     try {
       const response = await axios.put(
-        'https://ems-backend-seven.vercel.app/api/setting/change-password',
+        'https://ems-backend-woad.vercel.app/api/setting/change-password',
         setting,
         {
           headers: {

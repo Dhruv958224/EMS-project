@@ -34,7 +34,7 @@ export const DepartmentButtons = ({ _id, onDepartmentDelete }) => {
     const confirm = window.confirm("Do you want to delete?");
     if (confirm) {
       try {
-        const response = await axios.delete(`https://ems-backend-seven.vercel.app/api/department/${_id}`, {
+        const response = await axios.delete(`https://ems-backend-woad.vercel.app/api/department/${_id}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },
